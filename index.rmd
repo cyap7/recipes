@@ -1,0 +1,12 @@
+---
+title: "Recipes"
+author: "Aaron Khoo"
+date: "`r Sys.Date()`"
+# documentclass: memoir (get from ctan when you update TeX)
+output:
+  bookdown::pdf_book:
+    template: null
+---
+# Preface {-}
+
+Everyone loves eating good food <insert shit about cooking and recipes>. This is my compilation of recipes in a tidy form gathered from my parents and the internet. There is no overall theme for the recipes listed, but due to my racial heritage the foods do tend to be Asian-leaning. 
