@@ -1,0 +1,48 @@
+\documentclass[a4paper, oneside, 11pt]{book}
+
+
+
+% encoding, font, language
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+% \usepackage[svgnames]{xcolor} % if using titlepage2
+
+% Makes the fractions slanted a bit to fit better on a line
+\usepackage{nicefrac}
+
+% Makes the cookbook format
+\usepackage[
+    %handwritten,
+    %nowarnings,
+    %myconfig
+]
+{xcookybooky}
+
+% Changes \textcelcius to degrees celcius
+\DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+
+\usepackage{hyperref}    % must be the last package and it allows clickable toc
+
+\hbadness=10000 % Ignore underfull boxes
+
+\begin{document}
+\frontmatter
+    \input{frontmatter/titlepage}
+    \input{frontmatter/dedication}
+%    \input{acknowledgements}
+    \input{frontmatter/abstract}
+    \tableofcontents
+
+\mainmatter
+    \input{mainmatter/meat}
+    \input{mainmatter/vegetarian}
+    \input{mainmatter/dessert}
+
+
+% \appendix
+
+% \backmatter
+\end{document} 

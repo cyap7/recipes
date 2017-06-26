@@ -1,0 +1,23 @@
+\newcommand*{\plogo}{\fbox{$\mathcal{AK}$}} % Make a generic publisher logo
+\newcommand*{\titleGM}{\begingroup % Create the command for including the title page in the document
+\hbox{ % Horizontal box
+\hspace*{0.2\textwidth} % Whitespace to the left of the title page
+\rule{1pt}{\textheight} % Vertical line
+\hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
+\parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
+
+{\noindent\Huge\bfseries My Family \\[0.5\baselineskip] KHOOKBOOK}\\[2\baselineskip] % Title
+{\large \textit{A compilation}}\\[4\baselineskip] % Tagline or further description
+{\Large \textsc{Aaron Khoo}} % Author name
+
+\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+{\noindent No way do I have a publisher \plogo}\\[\baselineskip] % Publisher and logo
+}}
+\endgroup}
+\pagestyle{empty} % Removes page numbers
+
+\titleGM % This command includes the title page
+\clearpage
+
+\newpage\null\thispagestyle{empty}\newpage % insert a blank page after
+

@@ -1,0 +1,50 @@
+% Complete recipe example
+\begin{recipe}
+[% 
+    preparationtime = {\unit[1]{h}},
+    bakingtime={\unit[1]{h}},
+    bakingtemperature={\protect\bakingtemperature{
+        fanoven=\unit[230]{\textcelcius},
+        topbottomheat=\unit[195]{°C},
+        topheat=\unit[195]{°C},
+        gasstove=Level 2}},
+    portion = {\portion{5-6}},
+    calory={\unit[3]{kJ}},
+    source = {Mum}
+]
+{RECIPE NAME}
+    
+    \graph
+    {% pictures
+        small=pic/glass,     % small picture
+        big=pic/ingredients  % big picture
+    }
+    
+    \introduction{%
+        % Insert text inside a box
+    }
+    
+    \ingredients{%
+        2 bar & Dark Chocolate\\
+        \unit[200]{ml} & Cream
+    }
+    
+    \preparation{%
+        \step % step 1 here
+        \step % step 2 here
+    }
+    
+    \suggestion[Headline]
+    {%
+        Not too sure
+    }
+    
+    \suggestion{%
+        \blindtext
+    }
+    
+    \hint{%
+        The hint at the bottom
+    }
+    
+\end{recipe}

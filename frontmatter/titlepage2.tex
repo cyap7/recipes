@@ -1,0 +1,28 @@
+% Requires \usepackage[svgnames]{xcolor} for colour
+
+\newcommand*{\publisherlogo}{\fbox{$\mathcal{AK}$}} % Making publisher logo
+\newcommand*{\titleTH}{\begingroup % Create the command for including the title page in the document
+\raggedleft % Right-align all text
+\vspace*{\baselineskip} % Whitespace at the top of the page
+
+{\Large Aaron Khoo}\\[0.167\textheight] % Author name
+
+{\LARGE\bfseries My Family}\\[\baselineskip] % First part of the title
+
+{\textcolor{Red}{\Huge KHOOKBOOK}}\\[\baselineskip] % Main title which is red
+
+{\Large \textit{a compilation}}\par % Tagline or further description
+
+\vfill % Whitespace between the title block and the publisher
+
+{\large AK House \publisherlogo}\par % Publisher and logo
+
+\vspace*{3\baselineskip} % Whitespace at the bottom of the page
+\endgroup}
+
+\pagestyle{empty} % Removes page numbers
+
+\titleTH % This command includes the title page
+\clearpage
+
+\newpage\null\thispagestyle{empty}\newpage % Inserts a blank page after the titlepage
